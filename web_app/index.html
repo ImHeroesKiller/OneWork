@@ -10,23 +10,32 @@
     <div class="container">
         <h1>OneWork Web App</h1>
         <div class="input-group">
-            <label for="field1">Field 1:</label>
-            <input type="text" id="field1" name="field1">
+            <label for="url">Website URL:</label>
+            <input type="text" id="url" name="url" placeholder="Enter website URL">
         </div>
-        <div class="input-group">
-            <label for="field2">Field 2:</label>
-            <input type="text" id="field2" name="field2">
+        <button onclick="analyzeWebsite()">Analyze Website</button>
+        <div id="elementsInfo"></div>
+        <div id="automationSection" style="display: none;">
+            <h2>Automation Settings</h2>
+            <div class="input-group">
+                <label for="fieldId">Field ID:</label>
+                <input type="text" id="fieldId" name="fieldId">
+            </div>
+            <div class="input-group">
+                <label for="text">Text to Enter:</label>
+                <input type="text" id="text" name="text">
+            </div>
+            <div class="input-group">
+                <label for="interval">Interval (seconds):</label>
+                <select id="interval" name="interval">
+                    <option value="10">10 seconds</option>
+                    <option value="30">30 seconds</option>
+                    <option value="60">1 minute</option>
+                    <option value="600">10 minutes</option>
+                </select>
+            </div>
+            <button onclick="startAutomation()">Start Automation</button>
         </div>
-        <div class="input-group">
-            <label for="field3">Field 3:</label>
-            <input type="text" id="field3" name="field3">
-        </div>
-        <button id="button1" onclick="clickButton('button1')">Button 1</button>
-        <button id="button2" onclick="clickButton('button2')">Button 2</button>
-        <button id="button3" onclick="clickButton('button3')">Button 3</button>
-        <a href="#" id="link1" onclick="clickLink('link1')">Link 1</a>
-        <a href="#" id="link2" onclick="clickLink('link2')">Link 2</a>
-        <a href="#" id="link3" onclick="clickLink('link3')">Link 3</a>
         <p id="info"></p>
     </div>
     <script src="js/main.js"></script>
