@@ -4,7 +4,7 @@ function analyzeWebsite() {
         alert('Please enter a website URL.');
         return;
     }
-    
+
     fetch(url)
         .then(response => response.text())
         .then(data => {
