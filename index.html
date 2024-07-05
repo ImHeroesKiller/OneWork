@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OneWork Web App</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>OneWork Web App</h1>
+        <div class="input-group">
+            <label for="x">X:</label>
+            <input type="number" id="x" name="x">
+        </div>
+        <div class="input-group">
+            <label for="y">Y:</label>
+            <input type="number" id="y" name="y">
+        </div>
+        <div class="input-group">
+            <label for="text">Text:</label>
+            <input type="text" id="text" name="text">
+        </div>
+        <button onclick="getMousePosition()">Get Mouse Position</button>
+        <button onclick="clickAtPosition()">Click at Position</button>
+        <button onclick="writeText()">Write Text</button>
+        <p id="position"></p>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>
