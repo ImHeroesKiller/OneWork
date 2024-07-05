@@ -1,19 +1,25 @@
 # OneWork
 
-OneWork adalah alat otomatisasi yang user-friendly, mirip dengan BeautifulSoup, yang dirancang untuk berinteraksi dengan elemen GUI tanpa memerlukan coding.
+OneWork is a user-friendly automation tool similar to BeautifulSoup, designed to interact with GUI elements without coding.
 
-## Fitur Utama
+## Project Structure
 
-- **User Interface Builder:** Antarmuka drag-and-drop untuk membuat UI tanpa coding.
-- **Screen Reading and Pixel Detection:** Deteksi elemen di layar dengan resolusi tetap.
-- **Action Mapping:** Simulasi klik dan pengisian field otomatis.
-- **Data Extraction and Interaction:** Deteksi dan interaksi dengan field, menu, dan tombol.
+- `python_app/`: The Python application.
+- `web_app/`: The web application.
 
-## Instalasi
+## Python Application
 
-Clone repository ini dan instal dependensi yang diperlukan:
+### Features
+
+- Get the current mouse position.
+- Simulate clicking at a specific position.
+- Simulate writing text.
+
+### Installation
+
+Clone the repository and install the necessary dependencies:
 
 ```bash
-git clone https://github.com/USERNAME/OneWork.git
-cd OneWork
+git clone https://github.com/USERNAME/onework.git
+cd onework/python_app
 pip install -r requirements.txt
