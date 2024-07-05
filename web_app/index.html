@@ -10,21 +10,24 @@
     <div class="container">
         <h1>OneWork Web App</h1>
         <div class="input-group">
-            <label for="x">X:</label>
-            <input type="number" id="x" name="x">
+            <label for="field1">Field 1:</label>
+            <input type="text" id="field1" name="field1">
         </div>
         <div class="input-group">
-            <label for="y">Y:</label>
-            <input type="number" id="y" name="y">
+            <label for="field2">Field 2:</label>
+            <input type="text" id="field2" name="field2">
         </div>
         <div class="input-group">
-            <label for="text">Text:</label>
-            <input type="text" id="text" name="text">
+            <label for="field3">Field 3:</label>
+            <input type="text" id="field3" name="field3">
         </div>
-        <button onclick="getMousePosition()">Get Mouse Position</button>
-        <button onclick="clickAtPosition()">Click at Position</button>
-        <button onclick="writeText()">Write Text</button>
-        <p id="position"></p>
+        <button id="button1" onclick="clickButton('button1')">Button 1</button>
+        <button id="button2" onclick="clickButton('button2')">Button 2</button>
+        <button id="button3" onclick="clickButton('button3')">Button 3</button>
+        <a href="#" id="link1" onclick="clickLink('link1')">Link 1</a>
+        <a href="#" id="link2" onclick="clickLink('link2')">Link 2</a>
+        <a href="#" id="link3" onclick="clickLink('link3')">Link 3</a>
+        <p id="info"></p>
     </div>
     <script src="js/main.js"></script>
 </body>
