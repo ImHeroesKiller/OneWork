@@ -1,16 +1,26 @@
-function getMousePosition() {
-    const x = Math.floor(Math.random() * window.innerWidth);
-    const y = Math.floor(Math.random() * window.innerHeight);
-    document.getElementById('position').innerText = `Current mouse position: (${x}, ${y})`;
+document.addEventListener("DOMContentLoaded", function() {
+    displayElementInfo();
+});
+
+function displayElementInfo() {
+    const elements = document.querySelectorAll("input, button, a");
+    let infoText = "Element IDs and their descriptions:\n";
+
+    elements.forEach(element => {
+        infoText += `ID: ${element.id}, Type: ${element.tagName}, Description: ${element.innerText || element.placeholder}\n`;
+    });
+
+    document.getElementById("info").innerText = infoText;
 }
 
-function clickAtPosition() {
-    const x = document.getElementById('x').value;
-    const y = document.getElementById('y').value;
-    alert(`Simulating click at (${x}, ${y})`);
+function clickButton(buttonId) {
+    alert(`Button with ID ${buttonId} clicked`);
 }
 
-function writeText() {
-    const text = document.getElementById('text').value;
-    alert(`Simulating writing text: ${text}`);
+function clickLink(linkId) {
+    alert(`Link with ID ${linkId} clicked`);
+}
+
+function fillField(fieldId, text) {
+    document.getElementById(fieldId).value = text;
 }
