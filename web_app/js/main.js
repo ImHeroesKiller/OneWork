@@ -14,4 +14,3 @@ function writeText() {
     const text = document.getElementById('text').value;
     alert(`Simulating writing text: ${text}`);
 }
-
